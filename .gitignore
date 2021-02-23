@@ -24,4 +24,5 @@ Bin\
 x86/
 x64/
 .vs/
+packages/
 
