@@ -21,8 +21,7 @@ Bin\
 \release\
 /build/
 /build2
-x86\
-x64\
-.vs\
-RandomHash_DEV
+x86/
+x64/
+.vs/
 
