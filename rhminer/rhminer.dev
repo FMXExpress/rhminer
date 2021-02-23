@@ -1,10 +1,10 @@
 [Project]
-filename=jsoncpp.dev
-name=jsoncpp
-Type=2
+filename=rhminer.dev
+name=rhminer
+Type=1
 Ver=2
 ObjFiles=
-Includes=../../include
+Includes=
 Libs=
 PrivateResource=
 ResourceIncludes=
@@ -14,12 +14,12 @@ CppCompiler=
 Linker=
 IsCpp=1
 Icon=
-ExeOutput=..\..\lib
+ExeOutput=
 ObjectOutput=
 LogOutput=
 LogOutputEnabled=0
 OverrideOutput=0
-OverrideOutputName=jsoncpp.a
+OverrideOutputName=
 HostApplication=
 UseCustomMakefile=0
 CustomMakefile=
@@ -29,7 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
 CompilerSettings=0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;8;0;0;0
-UnitCount=3
+UnitCount=2
 
 [VersionInfo]
 Major=1
@@ -51,7 +51,7 @@ AutoIncBuildNr=0
 SyncProduct=1
 
 [Unit1]
-FileName=..\..\src\lib_json\json_reader.cpp
+FileName=rhminer\main.cpp
 CompileCpp=1
 Folder=
 Compile=1
@@ -61,7 +61,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit2]
-FileName=..\..\src\lib_json\json_value.cpp
+FileName=rhminer\precomp.cpp
 CompileCpp=1
 Folder=
 Compile=1
@@ -71,7 +71,27 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit3]
-FileName=..\..\src\lib_json\json_writer.cpp
+FileName=main.cpp
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit4]
+FileName=main_ssaver.cpp
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit5]
+FileName=precomp.cpp
 CompileCpp=1
 Folder=
 Compile=1

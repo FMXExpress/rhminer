@@ -26,3 +26,10 @@ x64/
 .vs/
 packages/
 
+# Dev-CPP config and build files
+*.o
+*.layout
+*.win
+*_private.h
+*_private.rc
+

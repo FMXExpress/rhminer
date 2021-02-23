@@ -3,7 +3,7 @@
 #//#define _WINSOCKAPI_    // stops windows.h including winsock.h
 #ifdef _WIN32_WINNT
     #include <winsock2.h>
-    #include <windows.h>
+	#include <windows.h>
 #else
     //#define __LITTLE_ENDIAN 1234
     #ifdef __linux__
@@ -45,4 +45,11 @@
 
 #if defined __CUDACC__
 #error dont compile cuda with boost
+#endif
+
+#ifdef _WIN32
+#pragma message "Win32"
+#endif
+#ifdef __GNUC__
+#pragma message "GNU C"
 #endif
