@@ -170,42 +170,42 @@ For more, see stackoverflow.com/questions/13074590
 
 inline S128O_S128O operator += (s128_o & lhs, const s128_o & rhs)
 {
-    lhs = lhs + rhs;
+    return lhs = lhs + rhs;
 }
 
 inline S128O_S128O operator += (s128_o & lhs, const __int64 & rhs)
 {
-    lhs = lhs + rhs;
+    return lhs = lhs + rhs;
 }
 
 inline S128O_S128O operator -= (s128_o & lhs, const s128_o & rhs)
 {
-    lhs = lhs - rhs;
+    return lhs = lhs - rhs;
 }
 
 inline S128O_S128O operator -= (s128_o & lhs, const __int64 & rhs)
 {
-    lhs = lhs - ((s128_o)rhs);
+    return lhs = lhs - ((s128_o)rhs);
 }
 
 inline S128O_S128O operator *= (s128_o & lhs, const s128_o & rhs)
 {
-    lhs = lhs * rhs;
+    return lhs = lhs * rhs;
 }
 
 inline S128O_S128O operator *= (s128_o & lhs, const __int64 & rhs)
 {
-    lhs = lhs * ((s128_o)rhs);
+    return lhs = lhs * ((s128_o)rhs);
 }
 
 inline S128O_S128O operator /= (s128_o & lhs, const s128_o & rhs)
 {
-    lhs = lhs / rhs;
+    return lhs = lhs / rhs;
 }
 
 inline S128O_S128O operator /= (s128_o & lhs, const __int64 & rhs)
 {
-    lhs = lhs / ((s128_o)rhs);
+    return lhs = lhs / ((s128_o)rhs);
 }
 
 

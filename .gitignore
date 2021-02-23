@@ -30,6 +30,7 @@ packages/
 *.o
 *.layout
 *.win
+*.gch
 *_private.h
 *_private.rc
 
