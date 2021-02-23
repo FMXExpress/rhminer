@@ -692,6 +692,10 @@ void __cpuid(int* cpuinfo, int info)
 	);
 }
 
+#endif
+
+#ifndef _WIN32_WINNT
+
 unsigned long long _xgetbv(unsigned int index)
 {
 	unsigned int eax, edx;
@@ -702,7 +706,10 @@ unsigned long long _xgetbv(unsigned int index)
 	);
 	return ((unsigned long long)edx << 32) | eax;
 }
-#else
+
+#endif
+
+#ifdef _WIN32_WINNT
 // Helper function to count set bits in the processor mask.
 DWORD CountSetBits(ULONG_PTR bitMask)
 {
