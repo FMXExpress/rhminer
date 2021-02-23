@@ -49,3 +49,8 @@ jsoncpp_lib_static.dir/
 .project
 .cproject
 /.settings/
+
+# Dev-CPP config and build files
+*.o
+*.layout
+*.win
