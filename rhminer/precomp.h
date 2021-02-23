@@ -38,7 +38,6 @@
 #include <boost/asio.hpp>
 #include <boost/algorithm/string.hpp>
 #include <boost/algorithm/string/trim_all.hpp>
-// <boost/timer.hpp> --> <boost/timer/timer.hpp>
 #include <boost/timer/timer.hpp>
 #include <boost/bind.hpp>
 #include <boost/optional.hpp>
@@ -47,9 +46,3 @@
 #error dont compile cuda with boost
 #endif
 
-#ifdef _WIN32
-#pragma message "Win32"
-#endif
-#ifdef __GNUC__
-#pragma message "GNU C"
-#endif
