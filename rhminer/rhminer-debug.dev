@@ -1,5 +1,5 @@
 [Project]
-FileName=rhminer.dev
+FileName=rhminer-debug.dev
 Name=rhminer
 Type=1
 Ver=2
@@ -15,11 +15,11 @@ Linker=../jsoncpp-1.8.0/lib/jsoncpp.a_@@_../../boost_1_74_0/stage/lib/libboost_t
 IsCpp=1
 Icon=
 ExeOutput=
-ObjectOutput=obj\release
+ObjectOutput=obj/debug
 LogOutput=
 LogOutputEnabled=0
-OverrideOutput=0
-OverrideOutputName=rhminer.exe
+OverrideOutput=1
+OverrideOutputName=rhminer-debug.exe
 HostApplication=
 UseCustomMakefile=0
 CustomMakefile=
@@ -27,8 +27,8 @@ CommandLine=
 Folders=
 IncludeVersionInfo=0
 SupportXPThemes=0
-CompilerSet=0
-CompilerSettings=0;0;0;26;0;11;4;0;4;0;0;0;0;0;0;0;0;0;0;0;0;1;8;0;0;0
+CompilerSet=1
+CompilerSettings=0;0;0;26;0;11;1;0;4;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0
 UnitCount=39
 
 [VersionInfo]
