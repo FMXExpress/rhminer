@@ -3,19 +3,7 @@
 Miner for RandomHash2 POW algorithm.<br>
 Support Intel/AMD 64 bit CPU.<br>
 Support stratum and solo mining<br>
-Works on Windows 7,10, Ubuntu 16/18, and MacOS
-Also comes as a ScreenSaver on windows.
-
-## Download prebuilt binaries
-**Current version is 2.3** <br>
-Support Windows7, Windows 10, Ubuntu 16/18, MacOS <br>
-There is one prebuilt binariy per OS <br>
-https://github.com/polyminer1/rhminer/releases/<br>
-
-## Alternative download site : 
-* Windows binaries https://mega.nz/#F!DqpAjCJQ!Q12a_YRlu_CWA92kIglKug
-* Linux binaries https://mega.nz/#F!Dz4ElAwK!gbWbU4OpmEf6YnOCLIKfSQ
-
+A port of RandomHash miner for the PascalCoin project to Dev-C++/TDM-GCC environment. Please refer to DEV-CPP-BUILD.md for details
 
 ## Mining locally/Solo
 To mine locally/solo you'll need the official PascalCoin wallet https://github.com/PascalCoin/PascalCoin/releases <br>
