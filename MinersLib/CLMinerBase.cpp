@@ -139,7 +139,8 @@ void  CLMinerBase::FreeQueuedBuffers()
 
 bytes* CLMinerBase::AllocQueuedBuffer(size_t size)  
 { 
-    m_queuedBuffers.push_back(std::auto_ptr<bytes>(new bytes(size))); 
+// auto_ptr --> unique_ptr
+    m_queuedBuffers.push_back(std::unique_ptr<bytes>(new bytes(size))); 
     return m_queuedBuffers.back().get(); 
 }
 

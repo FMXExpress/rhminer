@@ -72,8 +72,9 @@ protected:
     std::vector<U32>                m_lastCodeCRC;
     std::vector<std::vector<pair<string, cl::Kernel>>> m_kernels;
     std::vector<PreBuildFunctor>    m_OnPrebuildKernel;
-        
-    std::vector<std::auto_ptr<bytes>> m_queuedBuffers;
+ 
+ // auto_ptr --> unique_ptr       
+    std::vector<std::unique_ptr<bytes>> m_queuedBuffers;
     void    FreeQueuedBuffers();
     bytes*  AllocQueuedBuffer(size_t size);
 
