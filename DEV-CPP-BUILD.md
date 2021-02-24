@@ -21,3 +21,7 @@
   Three items there should provide correct paths to the libraries required. If your configuration is different please fix it as required.
 
 * Compile and enjoy. There should be single warning during build regarding a call strncat to at Global.cpp. If you see more something went wrong.  
+
+## Release notes
+* rhminer.dev is configured to support CPU mining only.  CUDA and OpenCL mining will work, but it requires porting of respective libraries to Dev-CPP\TDM-GCC environment.
+  
