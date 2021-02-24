@@ -2,7 +2,6 @@
 
 #//#define _WINSOCKAPI_    // stops windows.h including winsock.h
 #ifdef _WIN32_WINNT
-    #include <intrin.h> 
     #include <winsock2.h>
     #include <windows.h>
 #else

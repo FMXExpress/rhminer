@@ -26,7 +26,7 @@
     #include <immintrin.h>
   #endif
 
-  #ifndef _WIN32_WINNT
+  #ifndef _MSC_VER
     #include <x86intrin.h>
     
     #define _rotr8(x,n)	(((x) >> n) | ((x) << (8 - n)))
