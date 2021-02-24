@@ -20,4 +20,4 @@
 * Select "Project\Project Option" menu item, follow to "Parameters" tab and check "Linker" area. 
   Three items there should provide correct paths to the libraries required. If your configuration is different please fix it as required.
 
-* Compile and enjoy. There should ber single warning during build regarding a call strncat to at Global.cpp. If you see more something went wrong.  
+* Compile and enjoy. There should be single warning during build regarding a call strncat to at Global.cpp. If you see more something went wrong.  
