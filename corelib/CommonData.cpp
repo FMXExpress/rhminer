@@ -93,9 +93,16 @@ bytes fromHex(std::string const& _s, WhenError _throw)
 	return ret;
 }
 
+
+// UGLY-UGLY
+
+extern "C" {
+_CRTIMP errno_t __cdecl _putenv_s(const char *_Name,const char *_Value);
+}
+
 bool setenv(const char name[], const char value[], bool override)
 {
-#if _MSC_VER
+#if _WIN32_WINNT
 	if (!override && std::getenv(name) != nullptr)
 		return true;
 

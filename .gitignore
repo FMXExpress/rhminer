@@ -33,4 +33,6 @@ packages/
 *.gch
 *_private.h
 *_private.rc
+*_private.res
+*.exe
 

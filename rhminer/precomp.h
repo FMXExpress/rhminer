@@ -20,6 +20,8 @@
     #include <stdlib.h>
 #endif
 
+#include <sec_api/stdlib_s.h>
+
 #define BOOST_BIND_GLOBAL_PLACEHOLDERS
 
 #include <chrono>

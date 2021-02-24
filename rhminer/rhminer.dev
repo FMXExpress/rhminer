@@ -6,12 +6,12 @@ Ver=2
 ObjFiles=
 Includes=..;../../boost_1_74_0;../jsoncpp-1.8.0/include;../rhminer
 Libs="C:\Program Files (x86)\Dev-Cpp\MinGW64\lib"
-PrivateResource=
+PrivateResource=rhminer_private.rc
 ResourceIncludes=
 MakeIncludes=
 Compiler=
 CppCompiler=-D_WIN32_WINNT=0x0A00_@@_-DRH_COMPILE_CPU_ONLY _@@_-DRH_USE_WINDOWS_EVENTS_@@__@@_
-Linker=../jsoncpp-1.8.0/lib/jsoncpp.a_@@_"../../../Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib/libws2_32.a"_@@_
+Linker=../jsoncpp-1.8.0/lib/jsoncpp.a_@@_"../../../Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib/libws2_32.a"_@@_../../boost_1_74_0/stage/lib/libboost_thread-mgw49-mt-x64-1_74.a_@@_"../../../Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib/libmsvcrt.a"_@@_
 IsCpp=1
 Icon=
 ExeOutput=
@@ -27,9 +27,9 @@ CommandLine=
 Folders=
 IncludeVersionInfo=0
 SupportXPThemes=0
-CompilerSet=0
-CompilerSettings=00000i00c0000000000000000
-UnitCount=38
+CompilerSet=1
+CompilerSettings=00000f00c0000000001000000
+UnitCount=39
 
 [VersionInfo]
 Major=1
@@ -436,6 +436,15 @@ CompileCpp=1
 Folder=
 Compile=1
 Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit39]
+FileName=rhminer-gcc.rc
+Folder=Resources
+Compile=1
+Link=0
 Priority=1000
 OverrideBuildCmd=0
 BuildCmd=

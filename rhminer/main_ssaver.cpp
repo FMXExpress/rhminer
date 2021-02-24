@@ -26,7 +26,11 @@
 #include <scrnsave.h>
 #include <commctrl.h>
 #include <tlhelp32.h>
+#if defined(_MSC_VER)
 #include "resource.h"
+#else
+#include "resource-gcc.h"
+#endif
 
 #pragma comment(lib, "ComCtl32.lib")
 #pragma comment(lib, "Advapi32.lib")
