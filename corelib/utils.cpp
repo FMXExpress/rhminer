@@ -823,10 +823,10 @@ U64 GetFileSize(const char* name)
 
 void* RH_SysAlloc(size_t s)
 {
-#ifdef _WIN32_WINNT
+#ifdef _MSC_VER
     void* ptr;
     
-    ptr = _aligned_malloc(s, 4096);
+    ptr =  _aligned_malloc(s, 4096);
     return ptr;
 #else
     //return _mm_malloc( s, 4096 );
@@ -841,7 +841,7 @@ void* RH_SysAlloc(size_t s)
 
 void RH_SysFree(void* ptr)
 {
-#ifdef _WIN32_WINNT
+#ifdef _MSC_VER
     //_aligned_free(ptr);
     VirtualFree(ptr, 0, MEM_RELEASE);
 #else
