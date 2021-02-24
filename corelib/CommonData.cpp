@@ -95,7 +95,7 @@ bytes fromHex(std::string const& _s, WhenError _throw)
 
 bool setenv(const char name[], const char value[], bool override)
 {
-#if _WIN32
+#if _MSC_VER
 	if (!override && std::getenv(name) != nullptr)
 		return true;
 

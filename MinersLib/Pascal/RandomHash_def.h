@@ -103,7 +103,7 @@
 #ifndef __CUDA_ARCH__
 
 //linux's gcc to dumb to compile _mm_shuffle_epi8 with -mssse3 !!!
-#if !defined(_WIN32_WINNT) && !defined(RHMINER_ENABLE_SSE4)
+#if !defined(_MSC_VER) && !defined(RHMINER_ENABLE_SSE4)
 #define RH2_DISABLE_SHUFFLE_EPI8
 #endif
 

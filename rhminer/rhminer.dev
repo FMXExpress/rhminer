@@ -1,6 +1,6 @@
 [Project]
-filename=rhminer.dev
-name=rhminer
+FileName=rhminer.dev
+Name=rhminer
 Type=1
 Ver=2
 ObjFiles=
@@ -10,7 +10,7 @@ PrivateResource=
 ResourceIncludes=
 MakeIncludes=
 Compiler=
-CppCompiler=_@@_
+CppCompiler=-D_WIN32_WINNT_@@_
 Linker=../jsoncpp-1.8.0/lib/jsoncpp.a_@@_"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/lib/libws2_32.a"_@@_
 IsCpp=1
 Icon=
@@ -28,7 +28,7 @@ Folders=
 IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
-CompilerSettings=0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;8;0;0;0
+CompilerSettings=00000000c0000000000000000
 UnitCount=39
 
 [VersionInfo]
@@ -61,16 +61,6 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit2]
-FileName=precomp.cpp
-CompileCpp=1
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
-[Unit3]
 FileName=ClientManager.cpp
 CompileCpp=1
 Folder=
@@ -80,7 +70,7 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit4]
+[Unit3]
 FileName=CommandLineManager.cpp
 CompileCpp=1
 Folder=
@@ -90,7 +80,7 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit5]
+[Unit4]
 FileName=main_ssaver.cpp
 CompileCpp=1
 Folder=
@@ -100,7 +90,7 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit6]
+[Unit5]
 FileName=..\MinersLib\Algo\blake.cpp
 CompileCpp=1
 Folder=
@@ -110,7 +100,7 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit7]
+[Unit6]
 FileName=..\MinersLib\Algo\blake2b.cpp
 CompileCpp=1
 Folder=
@@ -120,7 +110,7 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit8]
+[Unit7]
 FileName=..\MinersLib\Algo\blake2s.cpp
 CompileCpp=1
 Folder=
@@ -130,7 +120,7 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit9]
+[Unit8]
 FileName=..\MinersLib\Algo\haval.cpp
 CompileCpp=1
 Folder=
@@ -140,117 +130,7 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit11]
-FileName=..\MinersLib\Algo\sha0.cpp
-CompileCpp=1
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
-[Unit12]
-FileName=..\MinersLib\Algo\sha1.cpp
-CompileCpp=1
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
-[Unit13]
-FileName=..\MinersLib\Algo\sha2.cpp
-CompileCpp=1
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
-[Unit14]
-FileName=..\MinersLib\Algo\sph_panama.cpp
-CompileCpp=1
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
-[Unit15]
-FileName=..\MinersLib\Pascal\avx.cpp
-CompileCpp=1
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
-[Unit16]
-FileName=..\MinersLib\Pascal\RandomHash_Cpu.cpp
-CompileCpp=1
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
-[Unit17]
-FileName=..\MinersLib\Pascal\RandomHashCLMiner.cpp
-CompileCpp=1
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
-[Unit18]
-FileName=..\MinersLib\Pascal\RandomHashCPUMiner.cpp
-CompileCpp=1
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
-[Unit19]
-FileName=..\MinersLib\Pascal\RandomHashHostCudaMiner.cpp
-CompileCpp=1
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
-[Unit20]
-FileName=..\MinersLib\CLMinerBase.cpp
-CompileCpp=1
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
-[Unit21]
-FileName=..\MinersLib\Farm.cpp
-CompileCpp=1
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
-[Unit10]
+[Unit9]
 FileName=..\MinersLib\Algo\Pascal.cpp
 CompileCpp=1
 Folder=
@@ -260,7 +140,107 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit22]
+[Unit11]
+FileName=..\MinersLib\Algo\sha1.cpp
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit12]
+FileName=..\MinersLib\Algo\sha2.cpp
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit13]
+FileName=..\MinersLib\Algo\sph_panama.cpp
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit14]
+FileName=..\MinersLib\Pascal\avx.cpp
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit15]
+FileName=..\MinersLib\Pascal\RandomHash_Cpu.cpp
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit16]
+FileName=..\MinersLib\Pascal\RandomHashCLMiner.cpp
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit17]
+FileName=..\MinersLib\Pascal\RandomHashCPUMiner.cpp
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit18]
+FileName=..\MinersLib\Pascal\RandomHashHostCudaMiner.cpp
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit19]
+FileName=..\MinersLib\CLMinerBase.cpp
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit20]
+FileName=..\MinersLib\Farm.cpp
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit21]
 FileName=..\MinersLib\GenericCLMiner.cpp
 CompileCpp=1
 Folder=
@@ -270,7 +250,17 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit23]
+[Unit10]
+FileName=..\MinersLib\Algo\sha0.cpp
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit22]
 FileName=..\MinersLib\GenericMinerClient.cpp
 CompileCpp=1
 Folder=
@@ -280,7 +270,7 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit24]
+[Unit23]
 FileName=..\MinersLib\Global.cpp
 CompileCpp=1
 Folder=
@@ -290,7 +280,7 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit25]
+[Unit24]
 FileName=..\MinersLib\GpuManager.cpp
 CompileCpp=1
 Folder=
@@ -300,7 +290,7 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit26]
+[Unit25]
 FileName=..\MinersLib\KernelOffsetManager.cpp
 CompileCpp=1
 Folder=
@@ -310,7 +300,7 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit27]
+[Unit26]
 FileName=..\MinersLib\Miner.cpp
 CompileCpp=1
 Folder=
@@ -320,7 +310,7 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit28]
+[Unit27]
 FileName=..\MinersLib\StratumClient.cpp
 CompileCpp=1
 Folder=
@@ -330,7 +320,7 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit29]
+[Unit28]
 FileName=..\MinersLib\wrapadl.cpp
 CompileCpp=1
 Folder=
@@ -340,7 +330,7 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit30]
+[Unit29]
 FileName=..\MinersLib\wrapamdsysfs.cpp
 CompileCpp=1
 Folder=
@@ -350,7 +340,7 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit31]
+[Unit30]
 FileName=..\MinersLib\wrapnvml.cpp
 CompileCpp=1
 Folder=
@@ -360,7 +350,7 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit32]
+[Unit31]
 FileName=..\corelib\CommonData.cpp
 CompileCpp=1
 Folder=
@@ -370,7 +360,7 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit33]
+[Unit32]
 FileName=..\corelib\FixedHash.cpp
 CompileCpp=1
 Folder=
@@ -380,7 +370,7 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit34]
+[Unit33]
 FileName=..\corelib\int128_o.cpp
 CompileCpp=1
 Folder=
@@ -390,7 +380,7 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit35]
+[Unit34]
 FileName=..\corelib\Log.cpp
 CompileCpp=1
 Folder=
@@ -400,7 +390,7 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit36]
+[Unit35]
 FileName=..\corelib\miniweb.cpp
 CompileCpp=1
 Folder=
@@ -410,7 +400,7 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit37]
+[Unit36]
 FileName=..\corelib\PascalWork.cpp
 CompileCpp=1
 Folder=
@@ -420,7 +410,7 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit38]
+[Unit37]
 FileName=..\corelib\utils.cpp
 CompileCpp=1
 Folder=
@@ -430,13 +420,23 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit39]
+[Unit38]
 FileName=..\corelib\Worker.cpp
 CompileCpp=1
 Folder=
 Compile=1
 Link=1
 Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit39]
+FileName=precomp.cpp
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
+Priority=1001
 OverrideBuildCmd=0
 BuildCmd=
 

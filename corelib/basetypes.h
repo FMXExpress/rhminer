@@ -24,7 +24,7 @@
    #define RH_ALIGN(n) __align__(n)
 #elif defined(__GNUC__)
     #define RH_ALIGN(n) __attribute__((aligned(n)))
-#elif defined(_WIN32)
+#elif defined(_MSC_VER)
     #define RH_ALIGN(n) __declspec(align(n))
 #else
     #error !! UNSUPPORTED COMPILER !!

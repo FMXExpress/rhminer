@@ -21,10 +21,13 @@
 // opt
 #define RH2_STRIDE_USE_MEMCPY
 //#define RH2_ENABLE_TRANSFO0_MMX128
-#if !defined(_WIN32_WINNT)
+#if !defined(_MSC_VER)
     #define RH2_ENABLE_MERSSEN_12_SSE4
     #define RH2_ENABLE_MERSSEN_INTERLEAVE
+#if !defined(_WIN32_WINNT)
+// This does not work for TDM-GCC
     #define RH2_ENABLE_EXPAND_MERSSEN_INPLACE
+#endif
 #else
     #define RH2_ENABLE_MERSSEN_12_SSE4 
     #define RH2_ENABLE_EXPAND_MERSSEN_INPLACE
@@ -491,6 +494,7 @@ inline void SetLastDWordLE(RH_StridePtr in_stride, U32 newNonce)
             U32 r = random % 8;
 #else
             U32 r = _mm_extract_epi32_M(r1, 0);
+// This is Intel intrinsic (TDM-GCC ???)            
             r1 = _mm_bsrli_si128(r1, 4);
             r = r % 8;
 #endif
