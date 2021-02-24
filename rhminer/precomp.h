@@ -21,6 +21,7 @@
     #include <stdlib.h>
 #endif
 
+#define BOOST_BIND_GLOBAL_PLACEHOLDERS
 
 #include <chrono>
 #include <thread>
