@@ -1,9 +1,12 @@
+This is a  port of RandomHash miner for the PascalCoin project to Dev-C++/TDM-GCC environment. Please refer to DEV-CPP-BUILD.md for details.
+
+_**Original README follows**_
+
 # rhminer 
 
 Miner for RandomHash2 POW algorithm.<br>
 Support Intel/AMD 64 bit CPU.<br>
 Support stratum and solo mining<br>
-A port of RandomHash miner for the PascalCoin project to Dev-C++/TDM-GCC environment. Please refer to DEV-CPP-BUILD.md for details
 
 ## Mining locally/Solo
 To mine locally/solo you'll need the official PascalCoin wallet https://github.com/PascalCoin/PascalCoin/releases <br>
