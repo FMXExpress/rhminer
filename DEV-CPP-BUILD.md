@@ -16,10 +16,13 @@
 > Copyright (C) 2019 Free Software Foundation, Inc.
 > This is free software; see the source for copying conditions.  There is NO 
 > warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.     
+
   * Bootstrap Boost build system with  the following command: _bootstrap.bat gcc_
+
   * Build the library with _b2 toolset=gcc link=static --with-thread_
     This command only builds thread library which is required to build rhminer further on. 
     There is no problem to have other Boost libaries built at the same system before or after this step and for whatever reasons.
+
   * Check that the file _boost_1_74_0\stage\lib\libboost_thread-mgw9-mt-x64-1_74.a_  exists
     Note that it is OK if there are other files at the same location or other instances of the same file at other folders
 
