@@ -9,7 +9,8 @@
   https://dl.bintray.com/boostorg/release/1.74.0/source/boost_1_74_0.zip
 
 * Build Boost thread library with TDM-GCC
-  (steps can be explained if necessary)
+** b2 toolset=gcc link=static --with-thread
+  
 
 * Build jsoncpp library with Dev-C++\TDM-GCC
   (the project file is at rhminer\jsoncpp-1.8.0\makefiles\Dev-CPP\jsoncpp.dev) 
