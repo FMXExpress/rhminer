@@ -9,12 +9,8 @@
   https://dl.bintray.com/boostorg/release/1.74.0/source/boost_1_74_0.zip
 
 * Build Boost thread library with TDM-GCC
-  * Add TDM-GCC bin folder to PATH. This is the folder where _gcc.exe_ and _g++.exe_ reside, for me it is folder is _C:\Program Files (x86)\Embarcadero\Dev-Cpp\TDM-GCC-64\bin_
-  * Check that the right version of gcc will be used, since you may have several of them installed. Go to boost root folder (the one that contains _bootstrap.bat_ )  and execute _gcc.exe --version_
-    Expected output:
-> gcc.exe (tdm64-1) 9.2.0
-> Copyright (C) 2019 Free Software Foundation, Inc.
-> This is free software; see the source for copying conditions.  There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.     
+  * Add TDM-GCC bin folder to PATH. This is the folder where _gcc.exe_ and _g++.exe_ reside, for me this folder is _C:\Program Files (x86)\Embarcadero\Dev-Cpp\TDM-GCC-64\bin_
+  * Check that the right version of gcc will be used, since you may have several of them installed. Go to boost root folder (the one that contains _bootstrap.bat_ )  and execute _gcc.exe --version_   Expected output: _gcc.exe (tdm64-1) 9.2.0_
 
   * Bootstrap Boost build system with  the following command: _bootstrap.bat gcc_
 
